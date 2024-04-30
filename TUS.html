@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="asset/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style>
+      body {
+        background-color: #eee7da;
+      }
+      .container {
+        width: 800px;
+        margin: 50px auto;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .sideNav {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .sideNav div {
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+      }
+
+      .sideNav div:hover {
+        background-color: #55a3d3;
+      }
+
+      .card {
+        flex: 2;
+        padding: 20px;
+      }
+
+      .card div {
+        text-align: center;
+        display: none;
+        padding: 15px;
+        height: 550px;
+        width: 550px;
+        background-color: #dbdbdb;
+        border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      .card div.active {
+        display: block;
+      }
+      .card div img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .card div p {
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 40px;
+      }
+      .web-details {
+        padding: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+   
+    <!-- navbar -->
+    <div class="container">
+      <!-- Side navigation -->
+      <div class="sideNav primary">
+        <div onclick="showContent('prasun')"Sarrok Thapa</div>
+        <div onclick="showContent('shishir')">Sangam Sunar</div>
+        <div onclick="showContent('vivek')">Pranjal Baral</div>
+        <div onclick="showContent('bishan')">Prashant Thapa</div>
+        <div onclick="showContent('nissan')">Dolma Gurung</div>
+      </div>
+
+      <!-- Display content -->
+      <div class="card">
+        <div class="active">
+          <img src="img.link" alt="" /><br />
+          <p></p>
+        </div>
+        <div id="Sarrok">
+          <img src="img.link" alt="" /><br />
+          <p>
+            Hi this is Sarrok. I am a student currently studing BIT in
+            ICP. I am from Pokhara.
+          </p>
+        </div>
+        <div id="Sangam">
+          <img src="img.link" alt="" /><br />
+          <p>
+            Hi this is Sangam. I am a student currently studing BIT in
+            ICP. I am from pokhara.
+          </p>
+        </div>
+        <div id="Pranjal0" id="Sarrok">
+          <img src="img.link" alt="" /><br />
+          <p>
+            Hi this is Pranjal. I am a student currently studing BIT in
+            ICP. I am from pokhara.
+          </p>
+        </div>
+        <div id="Prashant">
+          <img src="img.link" alt="" /><br />
+          <p>
+            Hi this is Prashant. I am a student currently studing BIT
+            in ICP. I am from pokhara.
+          </p>
+        </div>
+        <div id="dolma">
+          <img src="img.link" alt="" /><br />
+          <p>
+            Hi this is dolma. I am a student currently studing BIT in
+            ICP. I am from pokhara.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="web-details">
+      <p>
+       Welcome to our Grocery
+      </p>
+    </div>
+    <!----------- Footer section ----------->
+    <footer class="footer">
+      <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="./index.html">Home</a>
+        <a href="./product.html">Products</a>
+        <a href="./blog.html">Blogs</a>
+        <a href="./references.html">Research</a>
+        <a href="./aboutus.html">About_Us</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form class="footerForm" onsubmit="alert('Thank you for Subscribing');">
+          <input type="email" placeholder="Your Email Address" required />
+          <br />
+          <button>Subscribe</button>
+        </form>
+      </div>
+      <div class="col-3">
+        <h3>CONTACT</h3>
+        <p>123, XYZ Road, BSK 3 <br />Pokhara, Newroad</p>
+        <div class="social-icons">
+          <a href="fb.link" target="_blank"
+            ><img
+              src="img.link"
+              alt="icon"
+              style="height: 20px; width: 20px; padding: 5px"
+          /></a>
+          <a href="inst.link" target="_blank"
+            ><img
+              src="img"
+              alt="icon"
+              style="height: 20px; width: 20px; padding: 5px"
+          /></a>
+          <a href="twitter.link" target="_blank"
+            ><img
+              src="img"
+              alt="icon"
+              style="height: 20px; width: 20px; padding: 5px"
+          /></a>
+          <a href="yt.link" target="_blank"
+            ><img
+              src="img"
+              alt="icon"
+              style="height: 20px; width: 20px; padding: 5px"
+          /></a>
+          
+        </div>
+      </div>
+    </footer>
+    <script src="asset/js/main.js"></script>
+  </body>
+</html>
